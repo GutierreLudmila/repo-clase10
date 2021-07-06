@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/43566ee3ed.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grilla">
+        <header>
+            <div class="tituloContainer">
+                <div class="circulo">
+                    <div class="linea" id="lineaUno">
+                    </div>
+                    <h1 class="titulo">
+                        WANDA
+                    </h1>
+                    <h3 class="slogan">
+                        Despertando la conciencia
+                    </h3>
+                    <div class="linea">
+                    </div>
+                </div>
+            </div>
+            <div class="imgContainer">
+                <img src="./img/fotoDos.jpg" alt="">
+            </div>
+        </header>
+        <section class="section">
+            <div class="contanier">
+                <nav>
+                    <form action="">
+                        <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar"> 
+                    </form>
+                    <div class="categorias" id="categorias">
+                        
+                        <a href="#" class="activo" id="activo">Todos los Productos</a>
+                        <a href="#">Budines</a>
+                        <a href="#">Alfajores</a>
+                    </div>
+                    
+                    <div class="contenedor-carrito">
+                        <ul>
+                            <li class="submenu">
+                                <span class="carrito-btn"><i class="fas fa-store"></i></span>
+                                <div id="carrito">
+                                    <table id="lista-carrito">
+                                        <thead>
+                                            <tr>
+                                                <th class="lista-item">Imagen</th>
+                                                <th class="lista-item">Nombre</th>
+                                                <th class="lista-item">Precio</th>
+                                                <th class="lista-item"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                       
+                                        </tbody>
+                                    </table>
+    
+                                    <a href="#" id="vaciar-carrito">Vaciar Carrito</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                
+                <div class="grid">
+                    <div class="item" data-categoria="budines" data-etiquetas="budin budines limon frutal" data-descripcion="Budin de Limon con Glaseado" data-precio="$350" data-id="1">
+                        <div class="item-contenido">
+                            <img src="./img/Limon-Uno.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="item" data-categoria="alfajores" data-etiquetas="alfajor alfajores chocolate mani" data-descripcion="Alfajor de Chocolate y Mani" data-precio="$80" data-id="2">
+                        <div class="item-contenido">
+                            <img src="./img/alfajor-mani.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="item" data-categoria="budines" data-etiquetas="budin budines naranja chocolate frutal" data-descripcion="Budin de Naranja y Chocolate" data-precio="$325" data-id="3">
+                        <div class="item-contenido">
+                            <img src="./img/budin-de-naranja-y-chocolate.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="item" data-categoria="alfajores" data-etiquetas="alfajor alfajores maicena dulce de leche" data-descripcion="Alfajor de maicena" data-precio="$70" data-id="4">
+                        <div class="item-contenido">
+                            <img src="./img/alfajoresmaicena.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="item" data-categoria="budines" data-etiquetas="budin budines manzana canela frutal" data-descripcion="Budin de Manzana y Canela" data-precio="$310" data-id="5">
+                        <div class="item-contenido">
+                            <img src="./img/Manzana_recorte3.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="item" data-categoria="alfajores" data-etiquetas="alfajor alfajores coco dulce de leche" data-descripcion="Alfajor de Coco con Dulce de Leche" data-precio="$70" data-id="6">
+                        <div class="item-contenido">
+                            <img src="./img/Coco-Dos.png" alt=""> 
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>    
+        </section>
+        <section class="overlay" id="overlay">
+            <div class="contenedor-producto">
+                <div class="contenedor-img">
+                    <button id="btn-cerrar"><i class="fas fa-times"></i></button>
+                    <img src="" alt="">
+                </div>
+                <div class="contenedor-datos">
+                    <p class="descripcion">
+                        
+                    </p>
+                    <p class="precio">
+                        
+                    </p>
+                </div>
+                <a href="#" class="descripcion agregar-carrito">
+                    Agregar al carrito 
+                </a>
+            </div>
+        </section>
+        <footer>
+            <div class="contactos">
+                <h2>
+                    Contactos
+                </h2>
+                <p>
+                    <i class="fab fa-instagram"></i>  @wandaplantbased
+                </p>
+                <p>
+                    <i class="fab fa-whatsapp"></i> 1122334455
+                </p>
+                
+            </div>
+        </footer>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.4/dist/muuri.min.js"></script>
+   <script src="./js/main.js"></script>
+</body>
+</html>
